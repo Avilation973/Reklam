@@ -1,13 +1,19 @@
-# Pusula PC Bakım
+# Pusula PC Bakım (C#)
 
-Windows için Türkçe masaüstü bakım aracı. Python 3.10+ ve standart kütüphaneler gerekir.
+Windows masaüstü GUI bakım aracı, .NET Framework WinForms ile C# dilinde yazılmıştır.
 
-- Windows sürümü, boş disk alanı ve eski geçici dosya miktarı.
-- Kullanıcı geçici klasöründeki 7 günden eski dosyaları onayla temizleme; kilitli dosyalar atlanır.
+## Özellikler
+- 120 Windows ayarı ve yönetim aracını kategori ve arama ile açma.
+- İşletim sistemi, boş sistem diski alanı ve kullanılabilir RAM özeti.
+- Yalnızca kullanıcı geçici klasöründe 7 günden eski dosyaları tarayıp kullanıcı onayıyla temizleme.
 - DNS önbelleğini onayla yenileme.
-- Başlangıç uygulamaları ayarlarına kısayol.
+- Türkçe, koyu temalı Windows GUI.
 
-Sistem dosyalarını ve kayıt defterini değiştirmez. Hız artışı garantisi vermez.
+Uygulama kendiliğinden yönetici izni istemez. Sistem dosyalarını veya kayıt defterini otomatik değiştirmez. Bazı ayar bağlantıları Windows sürümüne göre bulunmayabilir.
 
-Çalıştırmak için Baslat.bat dosyasını açın veya `python optimizer.py` komutunu kullanın.
+## Derleme
+Visual Studio Developer Command Prompt veya .NET Framework C# Compiler ile:
+
+    csc /target:winexe /optimize+ /out:PusulaPcBakim.exe /reference:System.Windows.Forms.dll /reference:System.Drawing.dll PusulaPcBakim.cs
+
 

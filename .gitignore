@@ -1,5 +1,4 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
+bin/
+obj/
+_builddeps/
+*.pdb
